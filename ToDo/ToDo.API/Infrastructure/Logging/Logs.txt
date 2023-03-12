@@ -1,0 +1,4641 @@
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "An",
+  "password": "San"
+}
+Request Time = 21.02.2023 22:56:25
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW4iLCJVc2VySWQiOiI5IiwibmJmIjoxNjc3MDA1NzkxLCJleHAiOjE2NzcwMDYzOTEsImlhdCI6MTY3NzAwNTc5MSwiaXNzIjoibG9jYWxob3N0IiwiYXVkIjoibG9jYWxob3N0In0.P_wlt5hDgQDtCNBh0dI7MucNeseqevyjA3FWUgY8MZ8
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/subtasks
+Body = 
+Request Time = 21.02.2023 22:56:48
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = []
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = ?status=0
+Path = /v1/todos
+Body = 
+Request Time = 21.02.2023 22:56:56
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = [{"id":11,"title":"TodoForAn9","targetCompletionDate":"2023-02-20T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]}]
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "An",
+  "password": "San"
+}
+Request Time = 22.02.2023 01:05:53
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW4iLCJVc2VySWQiOiI5IiwibmJmIjoxNjc3MDEzNTU2LCJleHAiOjE2NzcwMTQxNTYsImlhdCI6MTY3NzAxMzU1NiwiaXNzIjoibG9jYWxob3N0IiwiYXVkIjoibG9jYWxob3N0In0._M5TG6PZteNpLp5BYmfzN0sSldh5SL4WAEKLv52BRL4
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PATCH
+Query String = 
+Path = /v1/todos/11
+Body = [
+  {
+    "value": "PatchedTitle",
+    "path": "/title",
+    "op": "replace"
+  }
+]
+Request Time = 22.02.2023 01:11:01
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":11,"title":"PatchedTitle","targetCompletionDate":"2023-02-20T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":null}
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:120
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/todos/11
+Body = 
+Request Time = 22.02.2023 01:13:35
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":11,"title":"PatchedTitle","targetCompletionDate":"2023-02-20T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]}
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:118
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PATCH
+Query String = 
+Path = /v1/todos/11
+Body = [
+  {
+    "value": "patched2",
+    "path": "/title",
+    "op": "replace",
+    "from": "string"
+  }
+]
+Request Time = 22.02.2023 01:16:37
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":11,"title":"patched2","targetCompletionDate":"2023-02-20T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":null}
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:116
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "An",
+  "password": "San"
+}
+Request Time = 22.02.2023 01:42:32
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW4iLCJVc2VySWQiOiI5IiwibmJmIjoxNjc3MDE1NzU3LCJleHAiOjE2NzcwMTYzNTcsImlhdCI6MTY3NzAxNTc1NywiaXNzIjoibG9jYWxob3N0IiwiYXVkIjoibG9jYWxob3N0In0.cuSZr7CEuAyKFKlw4PmGjkVjXExligw8SgGyzibO0lM
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PATCH
+Query String = 
+Path = /v1/todos/10
+Body = [
+  {
+    "value": "string",
+    "path": "string",
+    "op": "string",
+    "from": "string"
+  }
+]
+Request Time = 22.02.2023 01:43:58
+UserId = 9
+Username = An*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PATCH
+Query String = 
+Path = /v1/todos/11
+Body = [
+  {
+    "value": "patchedcorrectly",
+    "path": "/title",
+    "op": "replace",
+    "from": "string"
+  }
+]
+Request Time = 22.02.2023 01:44:39
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":11,"title":"patchedcorrectly","targetCompletionDate":"2023-02-20T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":null}
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:124
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PATCH
+Query String = 
+Path = /v1/todos/11
+Body = [
+  {
+    "value": "2023-02-20",
+    "path": "/f",
+    "op": "replace",
+    "from": "string"
+  }
+]
+Request Time = 22.02.2023 01:51:31
+UserId = 9
+Username = An*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PATCH
+Query String = 
+Path = /v1/todos/11
+Body = [
+  {
+    "value": "2023-02-20",
+    "path": "/f",
+    "op": "replace",
+    "from": "string"
+  }
+]
+Request Time = 22.02.2023 01:53:42
+UserId = 9
+Username = An*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "An",
+  "password": "San"
+}
+Request Time = 22.02.2023 14:56:07
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW4iLCJVc2VySWQiOiI5IiwibmJmIjoxNjc3MDYzMzcwLCJleHAiOjE2NzcwNjM5NzAsImlhdCI6MTY3NzA2MzM3MCwiaXNzIjoibG9jYWxob3N0IiwiYXVkIjoibG9jYWxob3N0In0.U5FFG0Rcb4xQ_UUCrJRJ3jKxjbzpBeLNy-gMBjkODzg
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = ?status=0
+Path = /v1/todos
+Body = 
+Request Time = 22.02.2023 14:57:09
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = [{"id":11,"title":"patchedcorrectly","targetCompletionDate":"2023-02-20T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]}]
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:124
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/todos
+Body = {
+  "title": "MyToDo",
+  "targetCompletionDate": "2023-02-22T10:55:21.576Z",
+  "subtasks": null
+}
+Request Time = 22.02.2023 14:57:49
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":12,"title":"MyToDo","targetCompletionDate":"2023-02-22T10:55:21.576Z","toDoStatus":1,"ownerId":9,"subtasks":null}
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:119
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/todos
+Body = {
+  "title": "MyToDo",
+  "targetCompletionDate": "2023-02-22T10:55:21.576Z"
+}
+Request Time = 22.02.2023 14:58:36
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":13,"title":"MyToDo","targetCompletionDate":"2023-02-22T10:55:21.576Z","toDoStatus":1,"ownerId":9,"subtasks":null}
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:119
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/todos
+Body = {
+  "title": "tooooodooooo",
+  "targetCompletionDate": "2023-02-22T10:58:59.544Z",
+  "subtasks": [
+    {
+      "title": "todooo subtask"
+    }
+  ]
+}
+Request Time = 22.02.2023 15:05:13
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":14,"title":"tooooodooooo","targetCompletionDate":"2023-02-22T10:58:59.544Z","toDoStatus":1,"ownerId":9,"subtasks":[{"id":3,"title":"todooo subtask","toDoItemId":14}]}
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:172
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = ?status=0
+Path = /v1/todos
+Body = 
+Request Time = 22.02.2023 15:10:09
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = [{"id":11,"title":"patchedcorrectly","targetCompletionDate":"2023-02-20T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]},{"id":12,"title":"MyToDo","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]},{"id":13,"title":"MyToDo","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]},{"id":14,"title":"tooooodooooo","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[{"id":3,"title":"todooo subtask","toDoItemId":14}]}]
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:518
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/todos/14
+Body = 
+Request Time = 22.02.2023 15:11:09
+UserId = 9
+Username = An*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "An",
+  "password": "San"
+}
+Request Time = 22.02.2023 15:12:24
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW4iLCJVc2VySWQiOiI5IiwibmJmIjoxNjc3MDY0MzQ0LCJleHAiOjE2NzcwNjQ5NDQsImlhdCI6MTY3NzA2NDM0NCwiaXNzIjoibG9jYWxob3N0IiwiYXVkIjoibG9jYWxob3N0In0.BBDMO1IATeOPF-F2xU8Zv8DAEJEhH3Old4NUq9s2iaY
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/todos/14
+Body = 
+Request Time = 22.02.2023 15:12:38
+UserId = 9
+Username = An*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "An",
+  "password": "San"
+}
+Request Time = 22.02.2023 15:14:28
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW4iLCJVc2VySWQiOiI5IiwibmJmIjoxNjc3MDY0NDcwLCJleHAiOjE2NzcwNjUwNzAsImlhdCI6MTY3NzA2NDQ3MCwiaXNzIjoibG9jYWxob3N0IiwiYXVkIjoibG9jYWxob3N0In0.AVMsroO-UQzINq92mh1sRGeiAqmuVK_803aXbEFWENE
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = ?status=0
+Path = /v1/todos
+Body = 
+Request Time = 22.02.2023 15:14:52
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = [{"id":11,"title":"patchedcorrectly","targetCompletionDate":"2023-02-20T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]},{"id":12,"title":"MyToDo","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]},{"id":13,"title":"MyToDo","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]},{"id":14,"title":"tooooodooooo","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[{"id":3,"title":"todooo subtask","toDoItemId":14}]}]
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:518
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/todos/14
+Body = 
+Request Time = 22.02.2023 15:15:07
+UserId = 9
+Username = An*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "An",
+  "password": "San"
+}
+Request Time = 22.02.2023 15:21:24
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW4iLCJVc2VySWQiOiI5IiwibmJmIjoxNjc3MDY0ODg3LCJleHAiOjE2NzcwNjU0ODcsImlhdCI6MTY3NzA2NDg4NywiaXNzIjoibG9jYWxob3N0IiwiYXVkIjoibG9jYWxob3N0In0.aXiv6KI8Qlq6A_Zkbisk6RHbEc4_dFx6aKabYzCJKPw
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = ?status=0
+Path = /v1/todos
+Body = 
+Request Time = 22.02.2023 15:21:39
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = [{"id":11,"title":"patchedcorrectly","targetCompletionDate":"2023-02-20T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]},{"id":12,"title":"MyToDo","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]},{"id":13,"title":"MyToDo","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]},{"id":14,"title":"tooooodooooo","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[{"id":3,"title":"todooo subtask","toDoItemId":14}]}]
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:518
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/todos/14
+Body = 
+Request Time = 22.02.2023 15:21:53
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":14,"title":"tooooodooooo","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[{"id":3,"title":"todooo subtask","toDoItemId":14}]}
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:167
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/todos/17
+Body = 
+Request Time = 22.02.2023 15:22:20
+UserId = 9
+Username = An*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/todos/9
+Body = 
+Request Time = 22.02.2023 15:22:40
+UserId = 9
+Username = An*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PATCH
+Query String = 
+Path = /v1/todos/14
+Body = [
+  {
+    "value": "aaaaaaaaaa",
+    "path": "/title",
+    "op": "replace",
+    "from": "string"
+  }
+]
+Request Time = 22.02.2023 15:23:36
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":14,"title":"aaaaaaaaaa","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[{"id":4,"title":"todooo subtask","toDoItemId":14}]}
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:165
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "An",
+  "password": "San"
+}
+Request Time = 22.02.2023 15:43:54
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW4iLCJVc2VySWQiOiI5IiwibmJmIjoxNjc3MDY2MjM2LCJleHAiOjE2NzcwNjY4MzYsImlhdCI6MTY3NzA2NjIzNiwiaXNzIjoibG9jYWxob3N0IiwiYXVkIjoibG9jYWxob3N0In0.7zxf0_2R6fjxu4ieP8AuaGwCZIByNh5TGVeNE79_hnk
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = ?status=0
+Path = /v1/todos
+Body = 
+Request Time = 22.02.2023 15:44:14
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = [{"id":11,"title":"patchedcorrectly","targetCompletionDate":"2023-02-20T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]},{"id":12,"title":"MyToDo","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]},{"id":13,"title":"MyToDo","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]},{"id":14,"title":"aaaaaaaaaa","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[{"id":3,"title":"todooo subtask","toDoItemId":14},{"id":4,"title":"todooo subtask","toDoItemId":14}]}]
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:566
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/todos
+Body = {
+  "title": "NewToDo",
+  "targetCompletionDate": "2023-02-22T11:44:39.764Z",
+  "subtasks": [
+    {
+      "title": "NewToDoSubtask"
+    }
+  ]
+}
+Request Time = 22.02.2023 15:44:50
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":15,"title":"NewToDo","targetCompletionDate":"2023-02-22T11:44:39.764Z","toDoStatus":1,"ownerId":9,"subtasks":[{"id":5,"title":"NewToDoSubtask","toDoItemId":15}]}
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:167
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = ?status=0
+Path = /v1/todos
+Body = 
+Request Time = 22.02.2023 15:45:03
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = [{"id":11,"title":"patchedcorrectly","targetCompletionDate":"2023-02-20T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]},{"id":12,"title":"MyToDo","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]},{"id":13,"title":"MyToDo","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]},{"id":14,"title":"aaaaaaaaaa","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[{"id":3,"title":"todooo subtask","toDoItemId":14},{"id":4,"title":"todooo subtask","toDoItemId":14}]},{"id":15,"title":"NewToDo","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[{"id":5,"title":"NewToDoSubtask","toDoItemId":15}]}]
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:729
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/todos/15
+Body = 
+Request Time = 22.02.2023 15:45:22
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":15,"title":"NewToDo","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[{"id":5,"title":"NewToDoSubtask","toDoItemId":15}]}
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:162
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/15
+Body = {
+  "title": "NewToDoUpdated",
+  "targetCompletionDate": "2023-02-22T11:45:34.216Z"
+}
+Request Time = 22.02.2023 15:45:59
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":15,"title":"NewToDoUpdated","targetCompletionDate":"2023-02-22T11:45:34.216Z","toDoStatus":1,"ownerId":9,"subtasks":null}
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:127
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/todos/15
+Body = 
+Request Time = 22.02.2023 15:48:36
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":15,"title":"NewToDoUpdated","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[{"id":5,"title":"NewToDoSubtask","toDoItemId":15}]}
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:169
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/15
+Body = {
+  "title": "NewToDoUpdateddddddddddd",
+  "targetCompletionDate": "2023-02-22T11:45:34.216Z"
+}
+Request Time = 22.02.2023 15:48:59
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":15,"title":"NewToDoUpdateddddddddddd","targetCompletionDate":"2023-02-22T11:45:34.216Z","toDoStatus":1,"ownerId":9,"subtasks":null}
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:137
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/todos/15
+Body = 
+Request Time = 22.02.2023 15:49:20
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":15,"title":"NewToDoUpdateddddddddddd","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[{"id":5,"title":"NewToDoSubtask","toDoItemId":15}]}
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:179
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "An",
+  "password": "San"
+}
+Request Time = 22.02.2023 15:55:49
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW4iLCJVc2VySWQiOiI5IiwibmJmIjoxNjc3MDY2OTUxLCJleHAiOjE2NzcwNjc1NTEsImlhdCI6MTY3NzA2Njk1MSwiaXNzIjoibG9jYWxob3N0IiwiYXVkIjoibG9jYWxob3N0In0.r8YOkW0GiownAkzj7OYSvQglgpgrSXGq042okwaSx6o
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = ?status=0
+Path = /v1/todos
+Body = 
+Request Time = 22.02.2023 15:56:09
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = [{"id":11,"title":"patchedcorrectly","targetCompletionDate":"2023-02-20T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]},{"id":12,"title":"MyToDo","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]},{"id":13,"title":"MyToDo","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]},{"id":14,"title":"aaaaaaaaaa","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[{"id":3,"title":"todooo subtask","toDoItemId":14},{"id":4,"title":"todooo subtask","toDoItemId":14}]},{"id":15,"title":"NewToDoUpdateddddddddddd","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[{"id":5,"title":"NewToDoSubtask","toDoItemId":15}]}]
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:746
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/15
+Body = {
+  "title": "string",
+  "targetCompletionDate": "2023-02-22T11:56:41.512Z"
+}
+Request Time = 22.02.2023 15:57:00
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":15,"title":"string","targetCompletionDate":"2023-02-22T11:56:41.512Z","toDoStatus":1,"ownerId":9,"subtasks":null}
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:119
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/todos/15
+Body = 
+Request Time = 22.02.2023 15:57:39
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":15,"title":"string","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[{"id":5,"title":"NewToDoSubtask","toDoItemId":15}]}
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:161
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/15
+Body = {
+  "title": "stringAAAAAAAAAAAAAAAAAAAAAAA",
+  "targetCompletionDate": "2023-02-22T11:56:41.512Z"
+}
+Request Time = 22.02.2023 15:57:56
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":15,"title":"stringAAAAAAAAAAAAAAAAAAAAAAA","targetCompletionDate":"2023-02-22T11:56:41.512Z","toDoStatus":1,"ownerId":9,"subtasks":null}
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:142
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/15
+Body = {
+  "title": "stringOBAAAAAAAAAAAAAA",
+  "targetCompletionDate": "2023-02-22T11:56:41.512Z"
+}
+Request Time = 22.02.2023 15:58:08
+UserId = 9
+Username = An*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "An",
+  "password": "San"
+}
+Request Time = 22.02.2023 16:00:22
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW4iLCJVc2VySWQiOiI5IiwibmJmIjoxNjc3MDY3MjI1LCJleHAiOjE2NzcwNjc4MjUsImlhdCI6MTY3NzA2NzIyNSwiaXNzIjoibG9jYWxob3N0IiwiYXVkIjoibG9jYWxob3N0In0.Z17H0drSp5hcchpQXhsxe3I9IV2GWOLCYKV3zMHh0P8
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = ?status=0
+Path = /v1/todos
+Body = 
+Request Time = 22.02.2023 16:01:00
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = [{"id":11,"title":"patchedcorrectly","targetCompletionDate":"2023-02-20T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]},{"id":12,"title":"MyToDo","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]},{"id":13,"title":"MyToDo","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]},{"id":14,"title":"aaaaaaaaaa","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[{"id":3,"title":"todooo subtask","toDoItemId":14},{"id":4,"title":"todooo subtask","toDoItemId":14}]},{"id":15,"title":"stringOBAAAAAAAAAAAAAA","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[{"id":5,"title":"NewToDoSubtask","toDoItemId":15}]}]
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:744
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/15
+Body = {
+  "title": "string",
+  "targetCompletionDate": "2023-02-22T12:01:17.890Z",
+}
+Request Time = 22.02.2023 16:01:27
+UserId = 9
+Username = An*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "An",
+  "password": "San"
+}
+Request Time = 22.02.2023 16:04:37
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW4iLCJVc2VySWQiOiI5IiwibmJmIjoxNjc3MDY3NDgwLCJleHAiOjE2NzcwNjgwODAsImlhdCI6MTY3NzA2NzQ4MCwiaXNzIjoibG9jYWxob3N0IiwiYXVkIjoibG9jYWxob3N0In0.0Ko6nbF_XoX3V4nIaxokbt7f5GsCp6h0GhiiCEGFN2A
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = ?status=0
+Path = /v1/todos
+Body = 
+Request Time = 22.02.2023 16:04:56
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = [{"id":11,"title":"patchedcorrectly","targetCompletionDate":"2023-02-20T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]},{"id":12,"title":"MyToDo","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]},{"id":13,"title":"MyToDo","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]},{"id":14,"title":"aaaaaaaaaa","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[{"id":3,"title":"todooo subtask","toDoItemId":14},{"id":4,"title":"todooo subtask","toDoItemId":14}]},{"id":15,"title":"string","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[{"id":5,"title":"NewToDoSubtask","toDoItemId":15}]}]
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:728
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/15
+Body = {
+  "title": "AEEEEEEEEEEEEEEE",
+  "targetCompletionDate": "2023-02-22T12:05:13.240Z"
+}
+Request Time = 22.02.2023 16:05:34
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":15,"title":"AEEEEEEEEEEEEEEE","targetCompletionDate":"2023-02-22T12:05:13.24Z","toDoStatus":1,"ownerId":9,"subtasks":[{"id":5,"title":"NewToDoSubtask","toDoItemId":15}]}
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:175
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/todos/15
+Body = 
+Request Time = 22.02.2023 16:07:22
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":15,"title":"AEEEEEEEEEEEEEEE","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[{"id":5,"title":"NewToDoSubtask","toDoItemId":15}]}
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:171
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/15
+Body = {
+  "title": "stringFOrToDO15",
+  "targetCompletionDate": "2023-02-22T12:07:34.899Z",
+  "subtasks": [
+    {
+      "id": 5,
+      "title": "stringSubtaskUpdated"
+    }
+  ]
+}
+Request Time = 22.02.2023 16:08:19
+UserId = 9
+Username = An*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/15
+Body = {
+  "title": "stringFOrToDO15",
+  "targetCompletionDate": "2023-02-22T12:07:34.899Z",
+  "subtasks": [
+    {
+      "id": 5,
+      "title": "stringSubtaskUpdated"
+    }
+  ]
+}
+Request Time = 22.02.2023 16:08:49
+UserId = 9
+Username = An*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/15
+Body = {
+  "title": "stringFOrToDO15",
+  "targetCompletionDate": "2023-02-22T12:07:34.899Z",
+  "subtasks": [
+    {
+      "id": 5,
+      "title": "stringSubtaskUpdated"
+    }
+  ]
+}
+Request Time = 22.02.2023 16:09:37
+UserId = 9
+Username = An*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "An",
+  "password": "San"
+}
+Request Time = 22.02.2023 16:18:44
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW4iLCJVc2VySWQiOiI5IiwibmJmIjoxNjc3MDY4MzI3LCJleHAiOjE2NzcwNjg5MjcsImlhdCI6MTY3NzA2ODMyNywiaXNzIjoibG9jYWxob3N0IiwiYXVkIjoibG9jYWxob3N0In0.eyF9CgbCl4OxkySKuZ0PHqD7JWru5zavSSnPBLZXfOU
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = ?status=0
+Path = /v1/todos
+Body = 
+Request Time = 22.02.2023 16:19:07
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = [{"id":11,"title":"patchedcorrectly","targetCompletionDate":"2023-02-20T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]},{"id":12,"title":"MyToDo","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]},{"id":13,"title":"MyToDo","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]},{"id":14,"title":"aaaaaaaaaa","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[{"id":3,"title":"todooo subtask","toDoItemId":14},{"id":4,"title":"todooo subtask","toDoItemId":14}]},{"id":15,"title":"AEEEEEEEEEEEEEEE","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[{"id":5,"title":"NewToDoSubtask","toDoItemId":15}]}]
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:738
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/15
+Body = {
+  "title": "string",
+  "targetCompletionDate": "2023-02-22T12:19:21.650Z",
+  "subtasks": [
+    {
+      "id": 5,
+      "title": "string"
+    }
+  ]
+}
+Request Time = 22.02.2023 16:19:42
+UserId = 9
+Username = An*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "An",
+  "password": "San"
+}
+Request Time = 22.02.2023 16:24:29
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW4iLCJVc2VySWQiOiI5IiwibmJmIjoxNjc3MDY4NjcyLCJleHAiOjE2NzcwNjkyNzIsImlhdCI6MTY3NzA2ODY3MiwiaXNzIjoibG9jYWxob3N0IiwiYXVkIjoibG9jYWxob3N0In0.TM-B8N-eXdsSmbIWVk3HWi43FiDh80-2vn6VveX_EwE
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = ?status=0
+Path = /v1/todos
+Body = 
+Request Time = 22.02.2023 16:24:47
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = [{"id":11,"title":"patchedcorrectly","targetCompletionDate":"2023-02-20T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]},{"id":12,"title":"MyToDo","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]},{"id":13,"title":"MyToDo","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]},{"id":14,"title":"aaaaaaaaaa","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[{"id":3,"title":"todooo subtask","toDoItemId":14},{"id":4,"title":"todooo subtask","toDoItemId":14}]},{"id":15,"title":"AEEEEEEEEEEEEEEE","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[{"id":5,"title":"NewToDoSubtask","toDoItemId":15}]}]
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:738
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/15
+Body = {
+  "title": "NEWWWWWWWW",
+  "targetCompletionDate": "2023-02-22T12:25:05.281Z",
+  "subtasks": [
+    {
+      "id": 5,
+      "title": "NEWSUBTASK"
+    }
+  ]
+}
+Request Time = 22.02.2023 16:25:35
+UserId = 9
+Username = An*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/15
+Body = {
+  "title": "NEWWWWWWWW",
+  "targetCompletionDate": "2023-02-22T12:25:05.281Z",
+  "subtasks": [
+    {
+      "id": 5,
+      "title": "NEWSUBTASK"
+    }
+  ]
+}
+Request Time = 22.02.2023 16:26:08
+UserId = 9
+Username = An*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/15
+Body = {
+  "title": "NEWWWWWWWW",
+  "targetCompletionDate": "2023-02-22T12:25:05.281Z",
+  "subtasks": [
+    {
+      "id": 5,
+      "title": "NEWSUBTASK"
+    }
+  ]
+}
+Request Time = 22.02.2023 16:26:29
+UserId = 9
+Username = An*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/15
+Body = {
+  "title": "NEWWWWWWWW",
+  "targetCompletionDate": "2023-02-22T12:25:05.281Z",
+  "subtasks": [
+    {
+      "id": 5,
+      "title": "NEWSUBTASK"
+    }
+  ]
+}
+Request Time = 22.02.2023 16:26:33
+UserId = 9
+Username = An*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/15
+Body = {
+  "title": "NEWWWWWWWW",
+  "targetCompletionDate": "2023-02-22T12:25:05.281Z",
+  "subtasks": [
+    {
+      "id": 5,
+      "title": "NEWSUBTASK"
+    }
+  ]
+}
+Request Time = 22.02.2023 16:27:18
+UserId = 9
+Username = An*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/15
+Body = {
+  "title": "NEWWWWWWWW",
+  "targetCompletionDate": "2023-02-22T12:25:05.281Z",
+  "subtasks": [
+    {
+      "id": 5,
+      "title": "NEWSUBTASK"
+    }
+  ]
+}
+Request Time = 22.02.2023 16:28:58
+UserId = 9
+Username = An*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/15
+Body = {
+  "title": "NEWWWWWWWW",
+  "targetCompletionDate": "2023-02-22T12:25:05.281Z",
+  "subtasks": [
+    {
+      "id": 5,
+      "title": "NEWSUBTASK"
+    }
+  ]
+}
+Request Time = 22.02.2023 16:29:25
+UserId = 9
+Username = An*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/15
+Body = {
+  "title": "NEWWWWWWWW",
+  "targetCompletionDate": "2023-02-22T12:25:05.281Z",
+  "subtasks": [
+    {
+      "id": 5,
+      "title": "NEWSUBTASK"
+    }
+  ]
+}
+Request Time = 22.02.2023 16:29:28
+UserId = 9
+Username = An*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "An",
+  "password": "San"
+}
+Request Time = 22.02.2023 16:31:43
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW4iLCJVc2VySWQiOiI5IiwibmJmIjoxNjc3MDY5MTA1LCJleHAiOjE2NzcwNjk3MDUsImlhdCI6MTY3NzA2OTEwNSwiaXNzIjoibG9jYWxob3N0IiwiYXVkIjoibG9jYWxob3N0In0.FykFYSs1sV1o_uPF4jmWv7y4qPPoDYSmBMyqDHyXUSY
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = ?status=0
+Path = /v1/todos
+Body = 
+Request Time = 22.02.2023 16:32:03
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = [{"id":11,"title":"patchedcorrectly","targetCompletionDate":"2023-02-20T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]},{"id":12,"title":"MyToDo","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]},{"id":13,"title":"MyToDo","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]},{"id":14,"title":"aaaaaaaaaa","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[{"id":3,"title":"todooo subtask","toDoItemId":14},{"id":4,"title":"todooo subtask","toDoItemId":14}]},{"id":15,"title":"AEEEEEEEEEEEEEEE","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[{"id":5,"title":"NewToDoSubtask","toDoItemId":15}]}]
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:738
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/todos/15
+Body = 
+Request Time = 22.02.2023 16:32:13
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":15,"title":"AEEEEEEEEEEEEEEE","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[{"id":5,"title":"NewToDoSubtask","toDoItemId":15}]}
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:171
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/15
+Body = {
+  "title": "string",
+  "targetCompletionDate": "2023-02-22T12:32:27.077Z",
+  "subtasks": [
+    {
+      "id": 5,
+      "title": "string"
+    }
+  ]
+}
+Request Time = 22.02.2023 16:32:38
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":15,"title":"string","targetCompletionDate":"2023-02-22T12:32:27.077Z","toDoStatus":1,"ownerId":9,"subtasks":[{"id":5,"title":"string","toDoItemId":15}]}
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:158
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "An",
+  "password": "San"
+}
+Request Time = 23.02.2023 00:57:16
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW4iLCJVc2VySWQiOiI5IiwibmJmIjoxNjc3MDk5NDM5LCJleHAiOjE2NzcxMDAwMzksImlhdCI6MTY3NzA5OTQzOSwiaXNzIjoibG9jYWxob3N0IiwiYXVkIjoibG9jYWxob3N0In0.1GfJgKRrK8hjfdHzXVkVu2NA5eGKsRUCJD-pdtQiO34
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = ?status=0
+Path = /v1/todos
+Body = 
+Request Time = 23.02.2023 00:59:10
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = [{"id":11,"title":"patchedcorrectly","targetCompletionDate":"2023-02-20T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]},{"id":12,"title":"MyToDo","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]},{"id":13,"title":"MyToDo","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[]},{"id":14,"title":"aaaaaaaaaa","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[{"id":3,"title":"todooo subtask","toDoItemId":14},{"id":4,"title":"todooo subtask","toDoItemId":14}]},{"id":15,"title":"string","targetCompletionDate":"2023-02-22T00:00:00","toDoStatus":1,"ownerId":9,"subtasks":[{"id":5,"title":"string","toDoItemId":15}]}]
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:720
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/todos/11/done
+Body = 
+Request Time = 23.02.2023 00:59:39
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":11,"title":"patchedcorrectly","targetCompletionDate":"2023-02-20T00:00:00","toDoStatus":2,"ownerId":9,"subtasks":[]}
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:122
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = ?status=2
+Path = /v1/todos
+Body = 
+Request Time = 23.02.2023 01:00:11
+UserId = 9
+Username = An
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = [{"id":11,"title":"patchedcorrectly","targetCompletionDate":"2023-02-20T00:00:00","toDoStatus":2,"ownerId":9,"subtasks":[]}]
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:124
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/subtasks/20
+Body = 
+Request Time = 23.02.2023 01:40:19
+UserId = 
+Username = 
+*******Response Log*******
+Content type = 
+Status code = 401
+Body = 
+UserId = 
+Username = 
+Headers = WWW-Authenticate:Bearer
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "An",
+  "password": "San"
+}
+Request Time = 23.02.2023 01:40:58
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW4iLCJVc2VySWQiOiI5IiwibmJmIjoxNjc3MTAyMDY0LCJleHAiOjE2NzcxMDI2NjQsImlhdCI6MTY3NzEwMjA2NCwiaXNzIjoibG9jYWxob3N0IiwiYXVkIjoibG9jYWxob3N0In0.hSQtEntq8WG9saySjyzMnD1YT2hxz_ZviQm0nSLEPhY
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/subtasks/20
+Body = 
+Request Time = 23.02.2023 01:41:40
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "An",
+  "password": "San"
+}
+Request Time = 23.02.2023 01:45:34
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW4iLCJVc2VySWQiOiI5IiwibmJmIjoxNjc3MTAyMzM5LCJleHAiOjE2NzcxMDI5MzksImlhdCI6MTY3NzEwMjMzOSwiaXNzIjoibG9jYWxob3N0IiwiYXVkIjoibG9jYWxob3N0In0.b925rjVCkjt-Gy4FPY1MpIRMF_jVoI6a7Rzhk0E3dFk
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/subtasks/20
+Body = 
+Request Time = 23.02.2023 01:46:00
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "An",
+  "password": "San"
+}
+Request Time = 23.02.2023 02:30:47
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW4iLCJVc2VySWQiOiI5IiwibmJmIjoxNjc3MTA1MDQ3LCJleHAiOjE2NzcxMDU2NDcsImlhdCI6MTY3NzEwNTA0NywiaXNzIjoibG9jYWxob3N0IiwiYXVkIjoibG9jYWxob3N0In0.1ULpln3euTDZ6Sok2e7NUEMxaSX1jIEtftrQnh2JXg8
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/subtasks
+Body = 
+Request Time = 23.02.2023 02:31:09
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = [{"id":3,"title":"todooo subtask","toDoItemId":14},{"id":4,"title":"todooo subtask","toDoItemId":14},{"id":5,"title":"string","toDoItemId":15}]
+UserId = 9
+Username = An
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:143
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "An",
+  "password": "San"
+}
+Request Time = 23.02.2023 21:30:19
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "An",
+  "password": "San"
+}
+Request Time = 23.02.2023 21:30:43
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "Password1"
+}
+Request Time = 23.02.2023 21:31:31
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 23.02.2023 21:54:17
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcxNzQ4NTcsImV4cCI6MTY3NzE3NTQ1NywiaWF0IjoxNjc3MTc0ODU3LCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.IagI8-ooTjcwz8kQK47NYiYJNimaJFi2gKD14e7_THc
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = ?status=0
+Path = /v1/todos
+Body = 
+Request Time = 23.02.2023 21:54:48
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = [{"id":31,"title":"ToDo1 for User 1","targetCompletionDate":"2023-02-25T00:00:00","toDoStatus":1,"ownerId":12,"subtasks":[{"id":10,"title":"Subtask1 For ToDo1","toDoItemId":31},{"id":11,"title":"Subtask2 For ToDo1","toDoItemId":31}]},{"id":32,"title":"ToDo2 for User 1","targetCompletionDate":"2023-02-25T00:00:00","toDoStatus":1,"ownerId":12,"subtasks":[{"id":12,"title":"Subtask withId 3 For ToDo2","toDoItemId":32}]},{"id":33,"title":"ToDo3 for User 1","targetCompletionDate":"2023-02-25T00:00:00","toDoStatus":2,"ownerId":12,"subtasks":[{"id":13,"title":"Subtask with Id 5 for  For ToDo3","toDoItemId":33}]}]
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:612
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/subtasks
+Body = 
+Request Time = 23.02.2023 21:56:11
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = [{"id":10,"title":"Subtask1 For ToDo1","toDoItemId":31},{"id":11,"title":"Subtask2 For ToDo1","toDoItemId":31},{"id":12,"title":"Subtask withId 3 For ToDo2","toDoItemId":32},{"id":13,"title":"Subtask with Id 5 for  For ToDo3","toDoItemId":33}]
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:243
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/todos
+Body = {
+  "title": "New Test ToDo",
+  "targetCompletionDate": "2023-02-23T17:56:42.576Z"
+}
+Request Time = 23.02.2023 21:57:07
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":35,"title":"New Test ToDo","targetCompletionDate":"2023-02-23T17:56:42.576Z","toDoStatus":1,"ownerId":12,"subtasks":null}
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:127
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 23.02.2023 22:04:23
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcxNzU0NjQsImV4cCI6MTY3NzE3NjA2NCwiaWF0IjoxNjc3MTc1NDY0LCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.4Y_VL3sPnRdFmJZ1LxgjkiGRT4x6HgFDXFb6ov8NR2g
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = ?status=0
+Path = /v1/todos
+Body = 
+Request Time = 23.02.2023 22:04:44
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = [{"id":31,"title":"ToDo1 for User 1","targetCompletionDate":"2023-02-25T00:00:00","toDoStatus":1,"ownerId":12,"subtasks":[{"id":10,"title":"Subtask1 For ToDo1","toDoItemId":31},{"id":11,"title":"Subtask2 For ToDo1","toDoItemId":31}]},{"id":32,"title":"ToDo2 for User 1","targetCompletionDate":"2023-02-25T00:00:00","toDoStatus":1,"ownerId":12,"subtasks":[{"id":12,"title":"Subtask withId 3 For ToDo2","toDoItemId":32}]},{"id":33,"title":"ToDo3 for User 1","targetCompletionDate":"2023-02-25T00:00:00","toDoStatus":2,"ownerId":12,"subtasks":[{"id":13,"title":"Subtask with Id 5 for  For ToDo3","toDoItemId":33}]},{"id":35,"title":"New Test ToDo","targetCompletionDate":"2023-02-23T00:00:00","toDoStatus":1,"ownerId":12,"subtasks":[]}]
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:733
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/todos
+Body = {
+  "title": "nEWWWWWW",
+  "targetCompletionDate": "2023-02-23T18:05:04.023Z"
+}
+Request Time = 23.02.2023 22:05:21
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":36,"title":"nEWWWWWW","targetCompletionDate":"2023-02-23T18:05:04.023Z","toDoStatus":1,"ownerId":12,"subtasks":null}
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:122
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 23.02.2023 22:09:11
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcxNzU3NTEsImV4cCI6MTY3NzE3NjM1MSwiaWF0IjoxNjc3MTc1NzUxLCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.nxHaxEjJ-Q5s2PpNlqctivfYpgx28oOqy-Wz_HCCdr4
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = ?status=0
+Path = /v1/todos
+Body = 
+Request Time = 23.02.2023 22:09:33
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = [{"id":31,"title":"ToDo1 for User 1","targetCompletionDate":"2023-02-25T00:00:00","toDoStatus":1,"ownerId":12,"subtasks":[{"id":10,"title":"Subtask1 For ToDo1","toDoItemId":31},{"id":11,"title":"Subtask2 For ToDo1","toDoItemId":31}]},{"id":32,"title":"ToDo2 for User 1","targetCompletionDate":"2023-02-25T00:00:00","toDoStatus":1,"ownerId":12,"subtasks":[{"id":12,"title":"Subtask withId 3 For ToDo2","toDoItemId":32}]},{"id":33,"title":"ToDo3 for User 1","targetCompletionDate":"2023-02-25T00:00:00","toDoStatus":2,"ownerId":12,"subtasks":[{"id":13,"title":"Subtask with Id 5 for  For ToDo3","toDoItemId":33}]},{"id":35,"title":"New Test ToDo","targetCompletionDate":"2023-02-23T00:00:00","toDoStatus":1,"ownerId":12,"subtasks":[]},{"id":36,"title":"nEWWWWWW","targetCompletionDate":"2023-02-23T00:00:00","toDoStatus":1,"ownerId":12,"subtasks":[]}]
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:849
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/todos/36
+Body = 
+Request Time = 23.02.2023 22:09:52
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":36,"title":"nEWWWWWW","targetCompletionDate":"2023-02-23T00:00:00","toDoStatus":1,"ownerId":12,"subtasks":[]}
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:115
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/36
+Body = {
+  "title": "UPDATEDNEW",
+  "targetCompletionDate": "2023-02-23T18:10:07.004Z",
+}
+Request Time = 23.02.2023 22:10:21
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/36
+Body = {
+  "title": "UPDATEDNEW",
+  "targetCompletionDate": "2023-02-23T18:10:07.004Z",
+  "subtasks": []
+}
+Request Time = 23.02.2023 22:11:08
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":36,"title":"UPDATEDNEW","targetCompletionDate":"2023-02-23T18:10:07.004Z","toDoStatus":1,"ownerId":12,"subtasks":[]}
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:122
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/36
+Body = {
+  "title": "UPDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAATEDNEW",
+  "targetCompletionDate": "2023-02-23T18:10:07.004Z",
+  "subtasks": []
+}
+Request Time = 23.02.2023 22:15:20
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/35
+Body = {
+  "title": "NEWNEWNEW",
+  "targetCompletionDate": "2023-02-23T18:16:58.065Z",
+  "subtasks": []
+}
+Request Time = 23.02.2023 22:17:19
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":35,"title":"NEWNEWNEW","targetCompletionDate":"2023-02-23T18:16:58.065Z","toDoStatus":1,"ownerId":12,"subtasks":[]}
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:121
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 23.02.2023 22:32:58
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcxNzcxNzksImV4cCI6MTY3NzE3Nzc3OSwiaWF0IjoxNjc3MTc3MTc5LCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.vbBW6x9xmZ1YlncuGrj4rdAQvf_bSKA1MCD4Sz6eMIA
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = ?status=0
+Path = /v1/todos
+Body = 
+Request Time = 23.02.2023 22:33:17
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = [{"id":31,"title":"ToDo1 for User 1","targetCompletionDate":"2023-02-25T00:00:00","toDoStatus":1,"ownerId":12,"subtasks":[{"id":10,"title":"Subtask1 For ToDo1","toDoItemId":31},{"id":11,"title":"Subtask2 For ToDo1","toDoItemId":31}]},{"id":32,"title":"ToDo2 for User 1","targetCompletionDate":"2023-02-25T00:00:00","toDoStatus":1,"ownerId":12,"subtasks":[{"id":12,"title":"Subtask withId 3 For ToDo2","toDoItemId":32}]},{"id":33,"title":"ToDo3 for User 1","targetCompletionDate":"2023-02-25T00:00:00","toDoStatus":2,"ownerId":12,"subtasks":[{"id":13,"title":"Subtask with Id 5 for  For ToDo3","toDoItemId":33}]},{"id":35,"title":"NEWNEWNEW","targetCompletionDate":"2023-02-23T00:00:00","toDoStatus":1,"ownerId":12,"subtasks":[]},{"id":36,"title":"UPDATEDNEW","targetCompletionDate":"2023-02-23T00:00:00","toDoStatus":1,"ownerId":12,"subtasks":[]}]
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:847
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/36
+Body = {
+  "title": "AAAAAAAAAAAAA",
+  "targetCompletionDate": "2023-02-23T18:33:41.102Z",
+  "subtasks": []
+}
+Request Time = 23.02.2023 22:33:58
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":36,"title":"AAAAAAAAAAAAA","targetCompletionDate":"2023-02-23T18:33:41.102Z","toDoStatus":1,"ownerId":12,"subtasks":[]}
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:125
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 23.02.2023 22:43:45
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcxNzc4MjUsImV4cCI6MTY3NzE3ODQyNSwiaWF0IjoxNjc3MTc3ODI1LCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.jRVpqUJt77UhHnXWbcCM8_cWioA-63bo6Vt_m0c8THg
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = ?status=0
+Path = /v1/todos
+Body = 
+Request Time = 23.02.2023 22:43:59
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = [{"id":31,"title":"ToDo1 for User 1","targetCompletionDate":"2023-02-25T00:00:00","toDoStatus":1,"ownerId":12,"subtasks":[{"id":10,"title":"Subtask1 For ToDo1","toDoItemId":31},{"id":11,"title":"Subtask2 For ToDo1","toDoItemId":31}]},{"id":32,"title":"ToDo2 for User 1","targetCompletionDate":"2023-02-25T00:00:00","toDoStatus":1,"ownerId":12,"subtasks":[{"id":12,"title":"Subtask withId 3 For ToDo2","toDoItemId":32}]},{"id":33,"title":"ToDo3 for User 1","targetCompletionDate":"2023-02-25T00:00:00","toDoStatus":2,"ownerId":12,"subtasks":[{"id":13,"title":"Subtask with Id 5 for  For ToDo3","toDoItemId":33}]},{"id":35,"title":"NEWNEWNEW","targetCompletionDate":"2023-02-23T00:00:00","toDoStatus":1,"ownerId":12,"subtasks":[]},{"id":36,"title":"AAAAAAAAAAAAA","targetCompletionDate":"2023-02-23T00:00:00","toDoStatus":1,"ownerId":12,"subtasks":[]}]
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:850
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/36
+Body = {
+  "title": "string",
+  "targetCompletionDate": "2023-02-23T18:44:16.030Z",
+  "subtasks": []
+}
+Request Time = 23.02.2023 22:44:31
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":36,"title":"string","targetCompletionDate":"2023-02-23T18:44:16.03Z","toDoStatus":1,"ownerId":12,"subtasks":[]}
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:117
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/36
+Body = {
+  "title": "stringa",
+  "targetCompletionDate": "2023-02-23T18:44:16.030Z",
+  "subtasks": []
+}
+Request Time = 23.02.2023 22:46:10
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 23.02.2023 22:55:24
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcxNzg1MjUsImV4cCI6MTY3NzE3OTEyNSwiaWF0IjoxNjc3MTc4NTI1LCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.t5g02P9UTU2bL1xQpg5BoCp6UYBunHI5b576ky0gRXc
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/36
+Body = {
+  "title": "string",
+  "targetCompletionDate": "2023-02-23T18:55:40.413Z",
+  "subtasks": []
+}
+Request Time = 23.02.2023 22:55:52
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":36,"title":"string","targetCompletionDate":"2023-02-23T18:55:40.413Z","toDoStatus":1,"ownerId":12,"subtasks":[]}
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:118
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/36
+Body = {
+  "title": "stringAAAAAAAAAAAA",
+  "targetCompletionDate": "2023-02-23T18:55:40.413Z",
+  "subtasks": []
+}
+Request Time = 23.02.2023 22:56:48
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 23.02.2023 23:15:07
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcxNzk3MDgsImV4cCI6MTY3NzE4MDMwOCwiaWF0IjoxNjc3MTc5NzA4LCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.HDQ7MBVFah4j7k9yaM63JfmuToUb4PLLbexTmp67u1s
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = ?status=0
+Path = /v1/todos
+Body = 
+Request Time = 23.02.2023 23:15:22
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = [{"id":31,"title":"ToDo1 for User 1","targetCompletionDate":"2023-02-25T00:00:00","toDoStatus":1,"ownerId":12,"subtasks":[{"id":10,"title":"Subtask1 For ToDo1","toDoItemId":31},{"id":11,"title":"Subtask2 For ToDo1","toDoItemId":31}]},{"id":32,"title":"ToDo2 for User 1","targetCompletionDate":"2023-02-25T00:00:00","toDoStatus":1,"ownerId":12,"subtasks":[{"id":12,"title":"Subtask withId 3 For ToDo2","toDoItemId":32}]},{"id":33,"title":"ToDo3 for User 1","targetCompletionDate":"2023-02-25T00:00:00","toDoStatus":2,"ownerId":12,"subtasks":[{"id":13,"title":"Subtask with Id 5 for  For ToDo3","toDoItemId":33}]},{"id":35,"title":"NEWNEWNEW","targetCompletionDate":"2023-02-23T00:00:00","toDoStatus":1,"ownerId":12,"subtasks":[]},{"id":36,"title":"string","targetCompletionDate":"2023-02-23T00:00:00","toDoStatus":1,"ownerId":12,"subtasks":[]}]
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:843
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/36
+Body = {
+  "title": "stringOOOOOOOOOBAAAAAAAAAAAAADZEEEEEE",
+  "targetCompletionDate": "2023-02-23T19:15:36.118Z",
+  "subtasks": [
+  ]
+}
+Request Time = 23.02.2023 23:16:03
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 23.02.2023 23:20:15
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcxODAwMTYsImV4cCI6MTY3NzE4MDYxNiwiaWF0IjoxNjc3MTgwMDE2LCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.BVIL9yuTXXqs9_C1UdMOuJdyxPyp75GYv2rfAkKQHL0
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/36
+Body = {
+  "title": "string",
+  "targetCompletionDate": "2023-02-23T19:20:32.681Z",
+subtasks:[]
+}
+Request Time = 23.02.2023 23:20:55
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":36,"title":"string","targetCompletionDate":"2023-02-23T19:20:32.681Z","toDoStatus":1,"ownerId":12,"subtasks":[]}
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:118
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/36
+Body = {
+  "title": "string",
+  "targetCompletionDate": "2023-02-23T19:20:32.681Z",
+subtasks:[]
+}
+Request Time = 23.02.2023 23:22:42
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":36,"title":"string","targetCompletionDate":"2023-02-23T19:20:32.681Z","toDoStatus":1,"ownerId":12,"subtasks":[]}
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:118
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 23.02.2023 23:30:23
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcxODA2MjMsImV4cCI6MTY3NzE4MTIyMywiaWF0IjoxNjc3MTgwNjIzLCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.123Dekm85DDVAZZTbFpBoXi6hNNwtj7CJbtw_f7LcpE
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/36
+Body = {
+  "title": "stringasndvajhaj",
+  "targetCompletionDate": "2023-02-23T19:30:38.652Z",
+}
+Request Time = 23.02.2023 23:31:06
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":36,"title":"stringasndvajhaj","targetCompletionDate":"2023-02-23T19:30:38.652Z","toDoStatus":1,"ownerId":12,"subtasks":[]}
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:128
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/todos/36/done
+Body = 
+Request Time = 23.02.2023 23:32:26
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":36,"title":"stringasndvajhaj","targetCompletionDate":"2023-02-23T00:00:00","toDoStatus":2,"ownerId":12,"subtasks":[]}
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:123
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 23.02.2023 23:38:11
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcxODEwOTEsImV4cCI6MTY3NzE4MTY5MSwiaWF0IjoxNjc3MTgxMDkxLCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.phGCs_BIQC4DfsHMN3n6_f-bhyqWosYEa5V0rF1EXgI
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/todos/36/done
+Body = 
+Request Time = 23.02.2023 23:38:33
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":36,"title":"stringasndvajhaj","targetCompletionDate":"2023-02-23T00:00:00","toDoStatus":2,"ownerId":12,"subtasks":[]}
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:123
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = DELETE
+Query String = 
+Path = /v1/todos/36
+Body = 
+Request Time = 23.02.2023 23:40:45
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 23.02.2023 23:41:40
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcxODEzMDAsImV4cCI6MTY3NzE4MTkwMCwiaWF0IjoxNjc3MTgxMzAwLCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ._LCb6qmaU-ivZg04mNFct86nHQ27BgWtGRFrxnyk6y8
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = DELETE
+Query String = 
+Path = /v1/todos/36
+Body = 
+Request Time = 23.02.2023 23:41:57
+UserId = 
+Username = 
+*******Response Log*******
+Content type = 
+Status code = 204
+Body = 
+UserId = 12
+Username = TestUser1
+Headers = 
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = DELETE
+Query String = 
+Path = /v1/todos/35
+Body = 
+Request Time = 23.02.2023 23:43:57
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 23.02.2023 23:47:31
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcxODE2NTEsImV4cCI6MTY3NzE4MjI1MSwiaWF0IjoxNjc3MTgxNjUxLCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.y8XaFMrlNN4tKPNs9CGcWa_ueezw-nG0ykThFUaV2lI
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = DELETE
+Query String = 
+Path = /v1/todos/35
+Body = 
+Request Time = 23.02.2023 23:47:54
+UserId = 
+Username = 
+*******Response Log*******
+Content type = 
+Status code = 204
+Body = 
+UserId = 12
+Username = TestUser1
+Headers = 
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 24.02.2023 01:54:47
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcxODkyODgsImV4cCI6MTY3NzE4OTg4OCwiaWF0IjoxNjc3MTg5Mjg4LCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.DOwi9_4k9G3ym5p93yNOqohjqd5kR8xL5svNUUeO0QU
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/todos/35
+Body = 
+Request Time = 24.02.2023 01:55:27
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/todos/35
+Body = 
+Request Time = 24.02.2023 01:57:15
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 24.02.2023 02:05:41
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcxODk5NDIsImV4cCI6MTY3NzE5MDU0MiwiaWF0IjoxNjc3MTg5OTQyLCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.1sYisUhi8L3d9VxIAheZ8deWUZcxi6IRP1DYoF62T7g
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/todos/35
+Body = 
+Request Time = 24.02.2023 02:06:44
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/todos/34
+Body = 
+Request Time = 24.02.2023 02:07:23
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/todos/33
+Body = 
+Request Time = 24.02.2023 02:07:55
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":33,"title":"ToDo3 for User 1","targetCompletionDate":"2023-02-25T00:00:00","toDoStatus":2,"ownerId":12,"subtasks":[{"id":13,"title":"Subtask with Id 5 for  For ToDo3","toDoItemId":33}]}
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:191
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 24.02.2023 02:27:40
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcxOTEyNjEsImV4cCI6MTY3NzE5MTg2MSwiaWF0IjoxNjc3MTkxMjYxLCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.HlT2fcQtSRkXDhoQy_cz2sVsBByzHm32DljAwmld9G8
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = ?status=0
+Path = /v1/todos
+Body = 
+Request Time = 24.02.2023 02:28:16
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = [{"id":31,"title":"ToDo1 for User 1","targetCompletionDate":"2023-02-25T00:00:00","toDoStatus":1,"ownerId":12,"subtasks":[{"id":10,"title":"Subtask1 For ToDo1","toDoItemId":31},{"id":11,"title":"Subtask2 For ToDo1","toDoItemId":31}]},{"id":32,"title":"ToDo2 for User 1","targetCompletionDate":"2023-02-25T00:00:00","toDoStatus":1,"ownerId":12,"subtasks":[{"id":12,"title":"Subtask withId 3 For ToDo2","toDoItemId":32}]},{"id":33,"title":"ToDo3 for User 1","targetCompletionDate":"2023-02-25T00:00:00","toDoStatus":2,"ownerId":12,"subtasks":[{"id":13,"title":"Subtask with Id 5 for  For ToDo3","toDoItemId":33}]}]
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:612
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = ?status=2
+Path = /v1/todos
+Body = 
+Request Time = 24.02.2023 02:29:35
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = [{"id":33,"title":"ToDo3 for User 1","targetCompletionDate":"2023-02-25T00:00:00","toDoStatus":2,"ownerId":12,"subtasks":[{"id":13,"title":"Subtask with Id 5 for  For ToDo3","toDoItemId":33}]}]
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:193
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/todos
+Body = {
+    "title": "ExampleToDo"
+    "targetCompletionDate": "2023-02-23T22:33:55.386Z",
+    "subtasks": [
+        {
+          "title": "ExampleSubtask"
+        }
+     ]    
+}
+Request Time = 24.02.2023 02:40:56
+UserId = 
+Username = 
+*******Response Log*******
+Content type = 
+Status code = 401
+Body = 
+UserId = 
+Username = 
+Headers = WWW-Authenticate:Bearer
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 24.02.2023 02:41:10
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcxOTIwNzEsImV4cCI6MTY3NzE5MjY3MSwiaWF0IjoxNjc3MTkyMDcxLCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.Ip9stciVea4VubJU52HZGYkywHRMhXp7DyDN1n_8Yu4
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/todos
+Body = {
+    "title": "ExampleToDo"
+    "targetCompletionDate": "2023-02-23T22:33:55.386Z",
+    "subtasks": [
+        {
+          "title": "ExampleSubtask"
+        }
+     ]    
+}
+Request Time = 24.02.2023 02:41:30
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 400
+Body = {"errors":{"title":["After parsing a value an unexpected character was encountered: \". Path 'title', line 3, position 4."]},"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-6768d57f83e82e26e1421f0ca12298bf-5c42ef5378de263b-00"}
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:315
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/todos
+Body = {
+    "title": "ExampleToDo",
+    "targetCompletionDate": "2023-02-23T22:33:55.386Z",
+    "subtasks": [
+        {
+          "title": "ExampleSubtask"
+        }
+     ]    
+}
+Request Time = 24.02.2023 02:41:59
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":37,"title":"ExampleToDo","targetCompletionDate":"2023-02-23T22:33:55.386Z","toDoStatus":1,"ownerId":12,"subtasks":[{"id":14,"title":"ExampleSubtask","toDoItemId":37}]}
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:173
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 24.02.2023 02:45:15
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcxOTIzMTUsImV4cCI6MTY3NzE5MjkxNSwiaWF0IjoxNjc3MTkyMzE1LCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.ZZrkbo1n9NcAkK03N5utcTGqkjK2vKsA3U8ffR7YtTo
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/todos
+Body = {
+    "title": "ExampleToDo",
+    "targetCompletionDate": "2023-02-23T22:33:55.386Z",
+    "subtasks": [
+        {
+          "title": "ExampleSubtask"
+        }
+     ]    
+}
+Request Time = 24.02.2023 02:45:47
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/todos
+Body = {
+    "title": "ExampleToDo",
+    "targetCompletionDate": "2023-02-23T22:33:55.386Z"   
+}
+Request Time = 24.02.2023 02:46:41
+UserId = 
+Username = 
+*******Response Log*******
+Content type = 
+Status code = 401
+Body = 
+UserId = 
+Username = 
+Headers = WWW-Authenticate:Bearer
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/todos
+Body = {
+    "title": "ExampleToDo",
+    "targetCompletionDate": "2023-02-23T22:33:55.386Z"   
+}
+Request Time = 24.02.2023 02:46:58
+UserId = 
+Username = 
+*******Response Log*******
+Content type = 
+Status code = 401
+Body = 
+UserId = 
+Username = 
+Headers = WWW-Authenticate:Bearer error="invalid_token"
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 24.02.2023 02:47:28
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcxOTI0NDgsImV4cCI6MTY3NzE5MzA0OCwiaWF0IjoxNjc3MTkyNDQ4LCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.GeWsJZLnsHzI-7rmPw9mG6v9ET4tAZu9AF4FXklOL9Q
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/todos
+Body = {
+    "title": "ExampleToDo",
+    "targetCompletionDate": "2023-02-23T22:33:55.386Z"   
+}
+Request Time = 24.02.2023 02:48:03
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":38,"title":"ExampleToDo","targetCompletionDate":"2023-02-23T22:33:55.386Z","toDoStatus":1,"ownerId":12,"subtasks":null}
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:125
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 24.02.2023 03:00:49
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcxOTMyNTAsImV4cCI6MTY3NzE5Mzg1MCwiaWF0IjoxNjc3MTkzMjUwLCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.-DrQzstWMpBTdr0UUyQ1873yBK8tehtMFeD7tJ6TSew
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = ?status=1
+Path = /v1/todos
+Body = 
+Request Time = 24.02.2023 03:01:22
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = [{"id":31,"title":"ToDo1 for User 1","targetCompletionDate":"2023-02-25T00:00:00","toDoStatus":1,"ownerId":12,"subtasks":[{"id":10,"title":"Subtask1 For ToDo1","toDoItemId":31},{"id":11,"title":"Subtask2 For ToDo1","toDoItemId":31}]},{"id":32,"title":"ToDo2 for User 1","targetCompletionDate":"2023-02-25T00:00:00","toDoStatus":1,"ownerId":12,"subtasks":[{"id":12,"title":"Subtask withId 3 For ToDo2","toDoItemId":32}]},{"id":37,"title":"ExampleToDo","targetCompletionDate":"2023-02-23T00:00:00","toDoStatus":1,"ownerId":12,"subtasks":[{"id":14,"title":"ExampleSubtask","toDoItemId":37}]},{"id":38,"title":"ExampleToDo","targetCompletionDate":"2023-02-23T00:00:00","toDoStatus":1,"ownerId":12,"subtasks":[]}]
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:708
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/31
+Body = {
+    "title": "Updated ExampleToDo",
+    "targetCompletionDate": "2023-02-23T22:33:55.386Z",
+    "subtasks": [
+        {
+          "id": 1,  
+          "title": "Updated ExampleSubtask"
+        }
+     ]    
+}
+Request Time = 24.02.2023 03:02:33
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/31
+Body = {
+    "title": "Updated ExampleToDo",
+    "targetCompletionDate": "2023-02-23T22:33:55.386Z",
+    "subtasks": [
+        {
+          "id": 1,  
+          "title": "Updated ExampleSubtask"
+        }
+     ]    
+}
+Request Time = 24.02.2023 03:04:41
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 24.02.2023 03:07:08
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcxOTM2MjgsImV4cCI6MTY3NzE5NDIyOCwiaWF0IjoxNjc3MTkzNjI4LCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.j-BGi2hlP4o_J7HgoKQQoMIybZUH-J43NgvIXfRnTAY
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/31
+Body = {
+    "title": "Updated ExampleToDo",
+    "targetCompletionDate": "2023-02-23T22:33:55.386Z",
+    "subtasks": [
+        {
+          "id": 1,  
+          "title": "Updated ExampleSubtask"
+        }
+     ]    
+}
+Request Time = 24.02.2023 03:07:54
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 24.02.2023 03:08:52
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcxOTM3MzMsImV4cCI6MTY3NzE5NDMzMywiaWF0IjoxNjc3MTkzNzMzLCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.2A_Ti-rjsVOVUX48JewOMRzXQm642XiuoeU010SJGAE
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/31
+Body = {
+    "title": "Updated ExampleToDo",
+    "targetCompletionDate": "2023-02-23T22:33:55.386Z",
+    "subtasks": [
+        {
+          "id": 1,  
+          "title": "Updated ExampleSubtask"
+        }
+     ]    
+}
+Request Time = 24.02.2023 03:09:18
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 24.02.2023 03:13:57
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcxOTQwMzgsImV4cCI6MTY3NzE5NDYzOCwiaWF0IjoxNjc3MTk0MDM4LCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.TxZKvfjz5qHaTd6S5Uht5NO6-eBgtVsXDUBiE8KJjhw
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/31
+Body = {
+    "title": "Updated ExampleToDo",
+    "targetCompletionDate": "2023-02-23T22:33:55.386Z",
+    "subtasks": [
+        {
+          "id": 1,  
+          "title": "Updated ExampleSubtask"
+        }
+     ]    
+}
+Request Time = 24.02.2023 03:14:42
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 24.02.2023 03:16:35
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcxOTQxOTYsImV4cCI6MTY3NzE5NDc5NiwiaWF0IjoxNjc3MTk0MTk2LCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.OjYdjs6yNR_XmJMqeaJebGeVzLjEEwo5C_agolKWVds
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/31
+Body = {
+    "title": "Updated ExampleToDo",
+    "targetCompletionDate": "2023-02-23T22:33:55.386Z",
+    "subtasks": [
+        {
+          "id": 1,  
+          "title": "Updated ExampleSubtask"
+        }
+     ]    
+}
+Request Time = 24.02.2023 03:17:04
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 24.02.2023 03:19:05
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcxOTQzNDYsImV4cCI6MTY3NzE5NDk0NiwiaWF0IjoxNjc3MTk0MzQ2LCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.VgArhwcPMC1xSzvBbxtFzchu9ymK9OyY_gpJN98Mmp8
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/31
+Body = {
+    "title": "Updated ExampleToDo",
+    "targetCompletionDate": "2023-02-23T22:33:55.386Z",
+    "subtasks": [
+        {
+          "id": 1,  
+          "title": "Updated ExampleSubtask"
+        }
+     ]    
+}
+Request Time = 24.02.2023 03:19:53
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 24.02.2023 03:23:03
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcxOTQ1ODQsImV4cCI6MTY3NzE5NTE4NCwiaWF0IjoxNjc3MTk0NTg0LCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.O3GVVqUMYIqcpGsgjv79Fe-J_rU-w-7u-ZLOJoVWp2U
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/31
+Body = {
+    "title": "Updated ExampleToDo",
+    "targetCompletionDate": "2023-02-23T22:33:55.386Z",
+    "subtasks": [
+        {
+          "id": 11,  
+          "title": "Updated ExampleSubtask"
+        }
+     ]    
+}}
+Request Time = 24.02.2023 03:24:00
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":31,"title":"Updated ExampleToDo","targetCompletionDate":"2023-02-23T22:33:55.386Z","toDoStatus":1,"ownerId":12,"subtasks":[{"id":11,"title":"Updated ExampleSubtask","toDoItemId":31},{"id":10,"title":"Subtask1 For ToDo1","toDoItemId":31}]}
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:244
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/todos/31
+Body = 
+Request Time = 24.02.2023 03:25:18
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":31,"title":"Updated ExampleToDo","targetCompletionDate":"2023-02-23T00:00:00","toDoStatus":1,"ownerId":12,"subtasks":[{"id":10,"title":"Subtask1 For ToDo1","toDoItemId":31},{"id":11,"title":"Updated ExampleSubtask","toDoItemId":31}]}
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:239
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/31
+Body = {
+    "title": "Updated ExampleToDo Without subtasks",
+    "targetCompletionDate": "2023-02-23T22:33:55.386Z"  
+}
+Request Time = 24.02.2023 03:26:25
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":31,"title":"Updated ExampleToDo Without subtasks","targetCompletionDate":"2023-02-23T22:33:55.386Z","toDoStatus":1,"ownerId":12,"subtasks":[{"id":10,"title":"Subtask1 For ToDo1","toDoItemId":31},{"id":11,"title":"Updated ExampleSubtask","toDoItemId":31}]}
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:261
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/todos/31
+Body = 
+Request Time = 24.02.2023 03:26:55
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":31,"title":"Updated ExampleToDo Without subtasks","targetCompletionDate":"2023-02-23T00:00:00","toDoStatus":1,"ownerId":12,"subtasks":[{"id":10,"title":"Subtask1 For ToDo1","toDoItemId":31},{"id":11,"title":"Updated ExampleSubtask","toDoItemId":31}]}
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:256
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/31
+Body = {
+    "title": "Updated ExampleToDo",
+    "targetCompletionDate": "2023-02-23T22:33:55.386Z",
+    "subtasks": [
+        {
+          "id": 1,  
+          "title": "Updated ExampleSubtask"
+        }
+     ]    
+}
+Request Time = 24.02.2023 03:27:28
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 24.02.2023 03:31:07
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcxOTUwNjgsImV4cCI6MTY3NzE5NTY2OCwiaWF0IjoxNjc3MTk1MDY4LCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.R65xHUd7F4rxIlz7yixDkBVdg9N_ep7VkBf7WMGAHh0
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/31
+Body = {
+    "title": "Updated ExampleToDo",
+    "targetCompletionDate": "2023-02-23T22:33:55.386Z",
+    "subtasks": [
+        {
+          "id": 1,  
+          "title": "Updated ExampleSubtask"
+        }
+     ]    
+}
+Request Time = 24.02.2023 03:31:33
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 24.02.2023 03:34:20
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcxOTUyNjAsImV4cCI6MTY3NzE5NTg2MCwiaWF0IjoxNjc3MTk1MjYwLCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.2XiMbVaivTej4a0Su9NXsLZdWdqtMSDXm1r1FEUyUFk
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/todos/31
+Body = 
+Request Time = 24.02.2023 03:34:39
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":31,"title":"Updated ExampleToDo Without subtasks","targetCompletionDate":"2023-02-23T00:00:00","toDoStatus":1,"ownerId":12,"subtasks":[{"id":10,"title":"Subtask1 For ToDo1","toDoItemId":31},{"id":11,"title":"Updated ExampleSubtask","toDoItemId":31}]}
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:256
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/31
+Body = {
+    "title": "Updated ExampleToDo",
+    "targetCompletionDate": "2023-02-23T22:33:55.386Z",
+    "subtasks": [
+        {
+          "id": 1,  
+          "title": "Updated ExampleSubtask"
+        }
+     ]    
+}
+Request Time = 24.02.2023 03:35:00
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 24.02.2023 03:39:45
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcxOTU1ODUsImV4cCI6MTY3NzE5NjE4NSwiaWF0IjoxNjc3MTk1NTg1LCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.ZGrJsCvSH3u1Gk2uPOjFbI2wwIrPkV6kxNLMYs9Fexs
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/31
+Body = {
+    "title": "Updated ExampleToDo",
+    "targetCompletionDate": "2023-02-23T22:33:55.386Z",
+    "subtasks": [
+        {
+          "id": 1,  
+          "title": "Updated ExampleSubtask"
+        }
+     ]    
+}
+Request Time = 24.02.2023 03:40:28
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/31
+Body = {
+    "title": "Updated ExampleToDo",
+    "targetCompletionDate": "2023-02-23T22:33:55.386Z",
+    "subtasks": [
+        {
+          "id": 1,  
+          "title": "Updated ExampleSubtask"
+        }
+     ]    
+}
+Request Time = 24.02.2023 03:41:18
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 24.02.2023 03:43:12
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcxOTU3OTIsImV4cCI6MTY3NzE5NjM5MiwiaWF0IjoxNjc3MTk1NzkyLCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.3K6kTBSI77H5XSwz51yxKbq0A2WNWzYlZA_lAVzNJMs
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/31
+Body = {
+    "title": "Updated ExampleToDo",
+    "targetCompletionDate": "2023-02-23T22:33:55.386Z",
+    "subtasks": [
+        {
+          "id": 1,  
+          "title": "Updated ExampleSubtask"
+        }
+     ]    
+}
+Request Time = 24.02.2023 03:43:47
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/31
+Body = {
+    "title": "Updated ExampleToDo",
+    "targetCompletionDate": "2023-02-23T22:33:55.386Z",
+    "subtasks": [
+        {
+          "id": 1,  
+          "title": "Updated ExampleSubtask"
+        }
+     ]    
+}
+Request Time = 24.02.2023 03:44:12
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 24.02.2023 03:47:02
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcxOTYwMjIsImV4cCI6MTY3NzE5NjYyMiwiaWF0IjoxNjc3MTk2MDIyLCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.Yp5TsupCOcnKxtYvYY8gOaRHKkiRgaZhkP61rQsu68U
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/31
+Body = {
+    "title": "Updated ExampleToDo",
+    "targetCompletionDate": "2023-02-23T22:33:55.386Z",
+    "subtasks": [
+        {
+          "id": 1,  
+          "title": "Updated ExampleSubtask"
+        }
+     ]    
+}
+Request Time = 24.02.2023 03:47:33
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 24.02.2023 03:48:47
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcxOTYxMjcsImV4cCI6MTY3NzE5NjcyNywiaWF0IjoxNjc3MTk2MTI3LCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.qxuhWQe_pJYtnRRkm2YwMXZsWXLSQzqD5eOQmfZfDmI
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/31
+Body = {
+    "title": "Updated ExampleToDo",
+    "targetCompletionDate": "2023-02-23T22:33:55.386Z",
+    "subtasks": [
+        {
+          "id": 1,  
+          "title": "Updated ExampleSubtask"
+        }
+     ]    
+}
+Request Time = 24.02.2023 03:49:11
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/31
+Body = {
+    "title": "Updated ExampleToDooooo",
+    "targetCompletionDate": "2023-02-23T22:33:55.386Z",
+    "subtasks": [
+        {
+          "id": 1,  
+          "title": "Updated ExampleSubtask"
+        }
+     ]    
+}
+Request Time = 24.02.2023 03:50:36
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 24.02.2023 03:52:21
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcxOTYzNDEsImV4cCI6MTY3NzE5Njk0MSwiaWF0IjoxNjc3MTk2MzQxLCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.cQCG485hUiSapNqnlyDwPTtIgOs--OzYD0nRNqr02SY
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/31
+Body = {
+    "title": "Updated ExampleToDo",
+    "targetCompletionDate": "2023-02-23T22:33:55.386Z",
+    "subtasks": [
+        {
+          "id": 1,  
+          "title": "Updated ExampleSubtask"
+        }
+     ]    
+}
+Request Time = 24.02.2023 03:53:12
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/31
+Body = {
+    "title": "Updated ExampleToDoajhvdbjfvahdvadskjbfsfbs",
+    "targetCompletionDate": "2023-02-23T22:33:55.386Z",
+    "subtasks": [
+        {
+          "id": 11,  
+          "title": "Updated ExampleSubtask"
+        }
+     ]    
+}
+Request Time = 24.02.2023 03:53:27
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":31,"title":"Updated ExampleToDoajhvdbjfvahdvadskjbfsfbs","targetCompletionDate":"2023-02-23T22:33:55.386Z","toDoStatus":1,"ownerId":12,"subtasks":[{"id":11,"title":"Updated ExampleSubtask","toDoItemId":31},{"id":10,"title":"Subtask1 For ToDo1","toDoItemId":31}]}
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:268
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/31
+Body = {
+    "title": "Updated ExampleToDoajhvdbjfvahdvadskjbfsfbs",
+    "targetCompletionDate": "2023-02-23T22:33:55.386Z",
+    "subtasks": [
+        {
+          "id": 11,  
+          "title": "Updated ExampleSubtaskjasvdjhv"
+        }
+     ]    
+}
+Request Time = 24.02.2023 03:54:13
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":31,"title":"Updated ExampleToDoajhvdbjfvahdvadskjbfsfbs","targetCompletionDate":"2023-02-23T22:33:55.386Z","toDoStatus":1,"ownerId":12,"subtasks":[{"id":11,"title":"Updated ExampleSubtaskjasvdjhv","toDoItemId":31},{"id":10,"title":"Subtask1 For ToDo1","toDoItemId":31}]}
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:276
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PUT
+Query String = 
+Path = /v1/todos/31
+Body = {
+    "title": "aeeeeeeeeeeee",
+    "targetCompletionDate": "2023-02-23T22:33:55.386Z"    
+}
+Request Time = 24.02.2023 03:55:12
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":31,"title":"aeeeeeeeeeeee","targetCompletionDate":"2023-02-23T22:33:55.386Z","toDoStatus":1,"ownerId":12,"subtasks":[{"id":10,"title":"Subtask1 For ToDo1","toDoItemId":31},{"id":11,"title":"Updated ExampleSubtaskjasvdjhv","toDoItemId":31}]}
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:246
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 24.02.2023 04:02:11
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcxOTY5MzEsImV4cCI6MTY3NzE5NzUzMSwiaWF0IjoxNjc3MTk2OTMxLCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.6jwghfHIdE8jT5vPOwEfpLAatRLyhPHpmnQ6zKhm9TA
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PATCH
+Query String = 
+Path = /v1/todos/31
+Body = [
+  {
+    "value": "aaaaaa",
+    "path": "/title",
+    "op": "replace"
+  }
+]
+Request Time = 24.02.2023 04:03:06
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":31,"title":"aaaaaa","targetCompletionDate":"2023-02-23T00:00:00","toDoStatus":1,"ownerId":12,"subtasks":[{"id":10,"title":"Subtask1 For ToDo1","toDoItemId":31},{"id":11,"title":"Updated ExampleSubtaskjasvdjhv","toDoItemId":31}]}
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:234
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = PATCH
+Query String = 
+Path = /v1/todos/30
+Body = [
+  {
+    "value": "aaaaaa",
+    "path": "/title",
+    "op": "replace"
+  }
+]
+Request Time = 24.02.2023 04:07:48
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 24.02.2023 04:12:17
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcxOTc1MzcsImV4cCI6MTY3NzE5ODEzNywiaWF0IjoxNjc3MTk3NTM3LCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.rvhT409f-LVL7eX53JQ_DWKDcI01aFTB-kCKHxR0bKM
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = DELETE
+Query String = 
+Path = /v1/todos/31
+Body = 
+Request Time = 24.02.2023 04:12:47
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = DELETE
+Query String = 
+Path = /v1/todos/31
+Body = 
+Request Time = 24.02.2023 04:13:16
+UserId = 
+Username = 
+*******Response Log*******
+Content type = 
+Status code = 204
+Body = 
+UserId = 12
+Username = TestUser1
+Headers = 
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = DELETE
+Query String = 
+Path = /v1/todos/33
+Body = 
+Request Time = 24.02.2023 04:15:26
+UserId = 
+Username = 
+*******Response Log*******
+Content type = 
+Status code = 204
+Body = 
+UserId = 12
+Username = TestUser1
+Headers = 
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = DELETE
+Query String = 
+Path = /v1/todos/2
+Body = 
+Request Time = 24.02.2023 04:16:13
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/subtasks/13
+Body = 
+Request Time = 24.02.2023 04:18:51
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":13,"title":"Subtask with Id 5 for  For ToDo3","toDoItemId":33}
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:68
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/todos/33
+Body = 
+Request Time = 24.02.2023 04:19:01
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/todos/33
+Body = 
+Request Time = 24.02.2023 04:19:15
+UserId = 
+Username = 
+*******Response Log*******
+Content type = 
+Status code = 401
+Body = 
+UserId = 
+Username = 
+Headers = WWW-Authenticate:Bearer
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/todos/33
+Body = 
+Request Time = 24.02.2023 04:19:42
+UserId = 
+Username = 
+*******Response Log*******
+Content type = 
+Status code = 401
+Body = 
+UserId = 
+Username = 
+Headers = WWW-Authenticate:Bearer error="invalid_token"
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 24.02.2023 04:19:57
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcxOTc5OTcsImV4cCI6MTY3NzE5ODU5NywiaWF0IjoxNjc3MTk3OTk3LCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.OAKYbyYOuW85B9J4ii3J27KTSCnNuBLkX3pcVtVqrBQ
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/todos/33
+Body = 
+Request Time = 24.02.2023 04:20:12
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = DELETE
+Query String = 
+Path = /v1/todos/33
+Body = 
+Request Time = 24.02.2023 04:20:34
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 24.02.2023 04:26:00
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcxOTgzNjAsImV4cCI6MTY3NzE5ODk2MCwiaWF0IjoxNjc3MTk4MzYwLCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.SL-Y48MujbudvLEjuY_T6NuSWYGsYtrEJ7LXL9uEWb8
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = DELETE
+Query String = 
+Path = /v1/todos/32
+Body = 
+Request Time = 24.02.2023 04:26:21
+UserId = 
+Username = 
+*******Response Log*******
+Content type = 
+Status code = 401
+Body = 
+UserId = 
+Username = 
+Headers = WWW-Authenticate:Bearer
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = DELETE
+Query String = 
+Path = /v1/todos/32
+Body = 
+Request Time = 24.02.2023 04:26:33
+UserId = 
+Username = 
+*******Response Log*******
+Content type = 
+Status code = 204
+Body = 
+UserId = 12
+Username = TestUser1
+Headers = 
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = DELETE
+Query String = 
+Path = /v1/todos/31
+Body = 
+Request Time = 24.02.2023 04:27:51
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 24.02.2023 04:41:24
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcxOTkyODUsImV4cCI6MTY3NzE5OTg4NSwiaWF0IjoxNjc3MTk5Mjg1LCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.FhFAV8kDmoFUzqbxveSIgHx8RyAS2ELfDf_ptoVITQM
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = DELETE
+Query String = 
+Path = /v1/todos/31
+Body = 
+Request Time = 24.02.2023 04:41:51
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = DELETE
+Query String = 
+Path = /v1/todos/31
+Body = 
+Request Time = 24.02.2023 04:43:37
+UserId = 
+Username = 
+*******Response Log*******
+Content type = 
+Status code = 204
+Body = 
+UserId = 12
+Username = TestUser1
+Headers = 
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 24.02.2023 13:57:33
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcyMzI2NTQsImV4cCI6MTY3NzIzMzI1NCwiaWF0IjoxNjc3MjMyNjU0LCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.dTr1Z_-URv_2FZtJHZgHJy48UI6HL9R9zChuG401D3g
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users
+Body =  {
+    "username": "ExampleUser",
+    "password": "ExamplePassword"
+ }
+Request Time = 24.02.2023 14:10:04
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":14,"username":"ExampleUser","password":"9491B3213177A4D53880131D716AA195C57701156BC33F89B3CC5DCFA55C4C5C19F953633FEDEA7BC211F52C400318AC2577620E357539CA43AF204696D4A478"}
+UserId = 
+Username = 
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:176
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users
+Body = 
+ {
+    "username": "ExampleUserr",
+    "password": "ExamplePassword"
+ }
+Request Time = 24.02.2023 14:11:42
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":15,"username":"ExampleUserr","password":"9491B3213177A4D53880131D716AA195C57701156BC33F89B3CC5DCFA55C4C5C19F953633FEDEA7BC211F52C400318AC2577620E357539CA43AF204696D4A478"}
+UserId = 
+Username = 
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:177
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body =  {
+    "username": "ExampleUser",
+    "password": "ExamplePassword"
+ }
+Request Time = 24.02.2023 14:16:06
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRXhhbXBsZVVzZXIiLCJVc2VySWQiOiIxNCIsIm5iZiI6MTY3NzIzNDAwNCwiZXhwIjoxNjc3MjM0NjA0LCJpYXQiOjE2NzcyMzQwMDQsImlzcyI6ImxvY2FsaG9zdCIsImF1ZCI6ImxvY2FsaG9zdCJ9.EVNTPjwAz9CDs1lzal0gxWrD0XWxzSjfO9EQ_BHjCvI
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body =  {
+    "username": "ExampleUserasdddddddddd",
+    "password": "ExamplePassword"
+ }
+Request Time = 24.02.2023 14:23:09
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 24.02.2023 18:15:26
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcyNDgxMjgsImV4cCI6MTY3NzI0ODcyOCwiaWF0IjoxNjc3MjQ4MTI4LCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.mjzH87gRIr8yo7pu2QeierNUzE8kprw2uJN25kR_cQU
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/subtasks
+Body = 
+Request Time = 24.02.2023 18:16:17
+UserId = 
+Username = 
+*******Response Log*******
+Content type = 
+Status code = 401
+Body = 
+UserId = 
+Username = 
+Headers = WWW-Authenticate:Bearer
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/subtasks
+Body = 
+Request Time = 24.02.2023 18:16:27
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = [{"id":12,"title":"Subtask withId 3 For ToDo2","toDoItemId":32},{"id":13,"title":"Subtask with Id 5 for  For ToDo3","toDoItemId":33},{"id":14,"title":"ExampleSubtask","toDoItemId":37},{"id":15,"title":"Subtask2 For ToDo1","toDoItemId":39}]
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:239
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/subtasks/12
+Body = 
+Request Time = 24.02.2023 18:16:56
+UserId = 
+Username = *******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = POST
+Query String = 
+Path = /v1/users/access-token
+Body = {
+  "username": "TestUser1",
+  "password": "TestPassword1"
+}
+Request Time = 24.02.2023 18:18:42
+UserId = 
+Username = 
+*******Response Log*******
+Content type = text/plain; charset=utf-8
+Status code = 200
+Body = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVzdFVzZXIxIiwiVXNlcklkIjoiMTIiLCJuYmYiOjE2NzcyNDgzMjQsImV4cCI6MTY3NzI0ODkyNCwiaWF0IjoxNjc3MjQ4MzI0LCJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QifQ.ktaDi_R5JcvIojKLaTPVwrcpFS2eoslDL3m9sZjJ02g
+UserId = 
+Username = 
+Headers = Content-Type:text/plain; charset=utf-8
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/subtasks
+Body = 
+Request Time = 24.02.2023 18:19:06
+UserId = 
+Username = 
+*******Response Log*******
+Content type = 
+Status code = 401
+Body = 
+UserId = 
+Username = 
+Headers = WWW-Authenticate:Bearer
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/subtasks
+Body = 
+Request Time = 24.02.2023 18:19:14
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = [{"id":12,"title":"Subtask withId 3 For ToDo2","toDoItemId":32},{"id":13,"title":"Subtask with Id 5 for  For ToDo3","toDoItemId":33},{"id":14,"title":"ExampleSubtask","toDoItemId":37},{"id":15,"title":"Subtask2 For ToDo1","toDoItemId":39}]
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:239
+
+*******Request Log*******
+IP = ::1
+Scheme = https
+Host = localhost:7066
+IsSecured = True
+Method = GET
+Query String = 
+Path = /v1/subtasks/12
+Body = 
+Request Time = 24.02.2023 18:19:28
+UserId = 
+Username = 
+*******Response Log*******
+Content type = application/json; charset=utf-8
+Status code = 200
+Body = {"id":12,"title":"Subtask withId 3 For ToDo2","toDoItemId":32}
+UserId = 12
+Username = TestUser1
+Headers = Content-Type:application/json; charset=utf-8
+Content-Length:62
+

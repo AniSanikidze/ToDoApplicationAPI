@@ -1,0 +1,49 @@
+
+*******Exception Log*******
+{"LogLevel":4,"Code":"UnhandledError","TraceId":"0HMOL3OBNT3F4:00000001","Type":null,"Title":"Subtask does not exist","Status":500,"Detail":null,"Instance":"/v1/subtasks/20","Extensions":{"TraceId":"0HMOL3OBNT3F4:00000001"}}
+*******Exception Log*******
+{"LogLevel":4,"Code":"UnhandledError","TraceId":"0HMOLOEBPVEB6:00000009","Type":null,"Title":"username or password is incorrect","Status":500,"Detail":null,"Instance":"/v1/users/access-token","Extensions":{"TraceId":"0HMOLOEBPVEB6:00000009"}}
+*******Exception Log*******
+{"LogLevel":4,"Code":"UnhandledError","TraceId":"0HMOLOEBPVEB6:0000000B","Type":null,"Title":"username or password is incorrect","Status":500,"Detail":null,"Instance":"/v1/users/access-token","Extensions":{"TraceId":"0HMOLOEBPVEB6:0000000B"}}
+*******Exception Log*******
+{"LogLevel":4,"Code":"UnhandledError","TraceId":"0HMOLOEBPVEB6:0000000D","Type":null,"Title":"username or password is incorrect","Status":500,"Detail":null,"Instance":"/v1/users/access-token","Extensions":{"TraceId":"0HMOLOEBPVEB6:0000000D"}}
+*******Exception Log*******
+{"LogLevel":4,"Code":"UnhandledError","TraceId":"0HMOLP3JG6JNR:0000000F","Type":null,"Title":"Object reference not set to an instance of an object.","Status":500,"Detail":null,"Instance":"/v1/todos/36","Extensions":{"TraceId":"0HMOLP3JG6JNR:0000000F"}}
+*******Exception Log*******
+{"LogLevel":4,"Code":"UnhandledError","TraceId":"0HMOLT1D6N3BG:0000000B","Type":null,"Title":"ToDo Not Found","Status":500,"Detail":null,"Instance":"/v1/todos/35","Extensions":{"TraceId":"0HMOLT1D6N3BG:0000000B"}}
+*******Exception Log*******
+{"LogLevel":2,"Code":"ToDoNotFound","TraceId":"0HMOLT87KS410:0000000B","Type":"https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.4","Title":"ToDo not found","Status":404,"Detail":null,"Instance":"/v1/todos/35","Extensions":{"TraceId":"0HMOLT87KS410:0000000B"}}
+*******Exception Log*******
+{"LogLevel":2,"Code":"ToDoNotFound","TraceId":"0HMOLT87KS410:0000000D","Type":"https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.4","Title":"ToDo not found","Status":404,"Detail":null,"Instance":"/v1/todos/34","Extensions":{"TraceId":"0HMOLT87KS410:0000000D"}}
+*******Exception Log*******
+{"LogLevel":4,"Code":"UnhandledError","TraceId":"0HMOLU6CP9D9I:0000000D","Type":null,"Title":"Object reference not set to an instance of an object.","Status":500,"Detail":null,"Instance":"/v1/todos/31","Extensions":{"TraceId":"0HMOLU6CP9D9I:0000000D"}}
+*******Exception Log*******
+{"LogLevel":4,"Code":"UnhandledError","TraceId":"0HMOLUSQ44A2S:0000000B","Type":null,"Title":"An error occurred while saving the entity changes. See the inner exception for details.","Status":500,"Detail":null,"Instance":"/v1/todos/31","Extensions":{"TraceId":"0HMOLUSQ44A2S:0000000B"}}
+*******Exception Log*******
+{"LogLevel":4,"Code":"UnhandledError","TraceId":"0HMOLUSQ44A2S:0000000D","Type":null,"Title":"An error occurred while saving the entity changes. See the inner exception for details.","Status":500,"Detail":null,"Instance":"/v1/todos/31","Extensions":{"TraceId":"0HMOLUSQ44A2S:0000000D"}}
+*******Exception Log*******
+{"LogLevel":4,"Code":"UnhandledError","TraceId":"0HMOLUUJS3MLK:0000000B","Type":null,"Title":"An error occurred while saving the entity changes. See the inner exception for details.","Status":500,"Detail":null,"Instance":"/v1/todos/31","Extensions":{"TraceId":"0HMOLUUJS3MLK:0000000B"}}
+*******Exception Log*******
+{"LogLevel":4,"Code":"UnhandledError","TraceId":"0HMOLUUJS3MLK:0000000D","Type":null,"Title":"An error occurred while saving the entity changes. See the inner exception for details.","Status":500,"Detail":null,"Instance":"/v1/todos/31","Extensions":{"TraceId":"0HMOLUUJS3MLK:0000000D"}}
+*******Exception Log*******
+{"LogLevel":2,"Code":"SubtaskNotFound","TraceId":"0HMOLV0ND17NT:0000000B","Type":"https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.4","Title":"Subtask not found","Status":404,"Detail":null,"Instance":"/v1/todos/31","Extensions":{"TraceId":"0HMOLV0ND17NT:0000000B"}}
+*******Exception Log*******
+{"LogLevel":2,"Code":"SubtaskNotFound","TraceId":"0HMOLV1SSK7EA:0000000B","Type":"https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.4","Title":"Subtask not found","Status":404,"Detail":null,"Instance":"/v1/todos/31","Extensions":{"TraceId":"0HMOLV1SSK7EA:0000000B"}}
+*******Exception Log*******
+{"LogLevel":2,"Code":"SubtaskNotFound","TraceId":"0HMOLV1SSK7EA:0000000D","Type":"https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.4","Title":"Subtask not found","Status":404,"Detail":null,"Instance":"/v1/todos/31","Extensions":{"TraceId":"0HMOLV1SSK7EA:0000000D"}}
+*******Exception Log*******
+{"LogLevel":2,"Code":"SubtaskNotFound","TraceId":"0HMOLV3QM01PB:0000000B","Type":"https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.4","Title":"Subtask not found","Status":404,"Detail":null,"Instance":"/v1/todos/31","Extensions":{"TraceId":"0HMOLV3QM01PB:0000000B"}}
+*******Exception Log*******
+{"LogLevel":2,"Code":"ToDoNotFound","TraceId":"0HMOLV9CANEEO:0000000D","Type":"https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.4","Title":"ToDo not found","Status":404,"Detail":null,"Instance":"/v1/todos/30","Extensions":{"TraceId":"0HMOLV9CANEEO:0000000D"}}
+*******Exception Log*******
+{"LogLevel":4,"Code":"UnhandledError","TraceId":"0HMOLVDQ68BCL:0000000B","Type":null,"Title":"An exception was thrown while attempting to evaluate a LINQ query parameter expression. See the inner exception for more information. To show additional information call 'DbContextOptionsBuilder.EnableSensitiveDataLogging'.","Status":500,"Detail":null,"Instance":"/v1/todos/31","Extensions":{"TraceId":"0HMOLVDQ68BCL:0000000B"}}
+*******Exception Log*******
+{"LogLevel":2,"Code":"ToDoNotFound","TraceId":"0HMOLVDQ68BCL:00000011","Type":"https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.4","Title":"ToDo not found","Status":404,"Detail":null,"Instance":"/v1/todos/2","Extensions":{"TraceId":"0HMOLVDQ68BCL:00000011"}}
+*******Exception Log*******
+{"LogLevel":2,"Code":"ToDoNotFound","TraceId":"0HMOLVDQ68BCL:00000015","Type":"https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.4","Title":"ToDo not found","Status":404,"Detail":null,"Instance":"/v1/todos/33","Extensions":{"TraceId":"0HMOLVDQ68BCL:00000015"}}
+*******Exception Log*******
+{"LogLevel":2,"Code":"ToDoNotFound","TraceId":"0HMOLVDQ68BCL:00000025","Type":"https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.4","Title":"ToDo not found","Status":404,"Detail":null,"Instance":"/v1/todos/33","Extensions":{"TraceId":"0HMOLVDQ68BCL:00000025"}}
+*******Exception Log*******
+{"LogLevel":2,"Code":"ToDoNotFound","TraceId":"0HMOLVDQ68BCL:00000027","Type":"https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.4","Title":"ToDo not found","Status":404,"Detail":null,"Instance":"/v1/todos/33","Extensions":{"TraceId":"0HMOLVDQ68BCL:00000027"}}
+*******Exception Log*******
+{"LogLevel":2,"Code":"InvalidUserCredentials","TraceId":"0HMOMA499OB5V:00000009","Type":"https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.9","Title":"Username or password is incorrect","Status":401,"Detail":null,"Instance":"/v1/users/access-token","Extensions":{"TraceId":"0HMOMA499OB5V:00000009"}}

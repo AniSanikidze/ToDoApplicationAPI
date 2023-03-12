@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>disable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+	<PropertyGroup>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<NoWarn>$(NoWarn);1591</NoWarn>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="FluentValidation" Version="11.5.1" />
+		<PackageReference Include="FluentValidation.AspNetCore" Version="11.2.2" />
+		<PackageReference Include="Mapster" Version="7.3.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.13" />
+		<PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+		<PackageReference Include="Microsoft.AspNetCore.JsonPatch" Version="7.0.3" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.13" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.13">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.13" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+		<PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="7.0.6" />
+		<PackageReference Include="Swashbuckle.AspNetCore.Newtonsoft" Version="6.5.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Infrastructure\Localizations\" />
+		<Folder Include="Infrastructure\Logging\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\ToDo.Application\ToDoApp.Application.csproj" />
+		<ProjectReference Include="..\ToDO.Infrastructure\ToDoApp.Infrastructure.csproj" />
+		<ProjectReference Include="..\ToDo.Persistence\ToDoApp.Persistence.csproj" />
+	</ItemGroup>
+
+</Project>
